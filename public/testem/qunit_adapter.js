@@ -85,7 +85,6 @@ function qunitAdapter(socket){
         currentTest.passed = params.passed
         currentTest.total = params.total
         currentTest.runDuration = params.runtime
-        console.log("params:\n"+JSON.stringify(params));
         results.total++
         if (currentTest.failed > 0)
             results.failed++
